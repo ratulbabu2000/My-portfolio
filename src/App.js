@@ -13,6 +13,7 @@ function App() {
             <li>Home</li>
             <li>Contect</li>
             <li>About</li>
+            <li>Content</li>
           </ul>
         </div>
         <button>Get in</button>

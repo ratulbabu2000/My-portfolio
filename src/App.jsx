@@ -16,6 +16,7 @@ function App() {
       <Services />
       <Exprinces />
       <Works />
+      <Portfolio />
       <Contect />
     </div>
 

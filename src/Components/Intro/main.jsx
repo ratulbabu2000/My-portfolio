@@ -54,8 +54,8 @@ export default function main() {
         <div style={{ top: "65%", left: "3%" }}>
           <FlotingDiv
             image="https://image.similarpng.com/very-thumbnail/2020/08/Like-icon-on-transparent-PNG.png"
-            text1="Like"
-            text2="Page"
+            text1="UI/UX"
+            text2="Designer"
           />
         </div>
 

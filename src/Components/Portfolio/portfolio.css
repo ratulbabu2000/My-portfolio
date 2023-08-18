@@ -2,7 +2,7 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 77vh;
+  height: 70vh;
   margin-top: 10rem;
 }
 .p-top-section {
@@ -10,16 +10,26 @@
   flex-direction: column;
 }
 .p-top-section > * {
-  font-size: 2.2rem;
+  font-size: 2.2vw;
 }
 .p-top-section span:nth-child(2) {
   color: orange;
+  font-size: 1.5vw;
 }
 
-.swiper {
-  display: flex;
-  box-shadow: var(--boxShadow);
+/* slider */
+
+.portfolio .swiper{
+  overflow: visible !important;
+  width: 100%;
 }
-.p-slide-item {
-  box-shadow: var(--boxShadow);
+
+.portfolio-slider .swiper-slider{
+  width: 30rem;
+}
+.portfolio img{
+  width: 28vw;
+  filter: drop-shadow(-12px 15px 13px rgba(0,0,0, 0.15));
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255);
 }

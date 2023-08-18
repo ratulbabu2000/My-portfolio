@@ -1,5 +1,6 @@
 import "./portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css"
 import React from "react";
 
 export default function portfolio() {
@@ -19,13 +20,35 @@ export default function portfolio() {
         <span>Recent Domo</span>
         <span>Project</span>
       </div>
-      <div className="p-bottom-section">
-        <Swiper>
-          <SwiperSlide >
-            <img className = 'p-slide-item'  src={page1} alt="" />
-          </SwiperSlide>
-        </Swiper>
-      </div>
+
+      <Swiper
+      spaceBetween={10}
+      slidesPerView={3}
+      grabCursor = {true}
+      className="portfolio-slider"
+      >
+        <SwiperSlide >
+          <img src={page1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide >
+          <img src={page1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide >
+          <img src={page1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide >
+          <img src={page1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide >
+          <img src={page1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide >
+          <img src={page1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide >
+          <img src={page1} alt="" />
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 }

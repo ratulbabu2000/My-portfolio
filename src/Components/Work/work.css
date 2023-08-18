@@ -1,0 +1,84 @@
+.work {
+  display: flex;
+  margin-bottom: 15rem;
+}
+.W-left {
+  flex: 1;
+}
+
+.w-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.circleOne {
+  position: relative;
+}
+.w-mainCurcle {
+  width: 25rem;
+  height: 25rem;
+  position: relative;
+  background: white;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+}
+.w-mainCurcle > * {
+  display: flex;
+  width: 7rem;
+  height: 7rem;
+  background: white;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  position: absolute;
+}
+.w-mainCurcle > :nth-child(1) {
+  left: 8rem;
+  top: -2rem;
+}
+.w-mainCurcle > :nth-child(2) {
+  left: -3rem;
+  top: 9rem;
+}
+.w-mainCurcle > :nth-child(3) {
+  left: 9rem;
+  top: 20rem;
+}
+.w-mainCurcle > :nth-child(4) {
+  right: -3rem;
+  top: 8rem;
+}
+.w-mainCurcle > :nth-child(5) {
+  width: 9rem;
+  height: 9rem;
+  left: 8rem;
+  top: 8rem;
+}
+.w-c-Circle {
+  border: 3px solid rgb(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.w-c-Circle > img {
+  width: 4rem;
+  height: 4rem;
+}
+.w-backCircle {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+  z-index: -1;
+  position: absolute;
+}
+.blueCircle {
+  background: cornflowerblue;
+  top: -2rem;
+  left: 13rem;
+}
+.orangeCircle {
+  background: orange;
+  top: 11rem;
+  left: 13rem;
+}

@@ -1,0 +1,17 @@
+.floting {
+  display: flex;
+  border-radius: 15px;
+  background: white;
+  box-shadow: var(--boxShadow);
+  justify-content: space-around;
+  align-items: center;
+  height: 2.5rem;
+  padding: 1rem 1.5rem;
+}
+.floting > img {
+  height: 50px;
+  margin-right: 20px;
+}
+.floting > span {
+  font-size: 12px;
+}

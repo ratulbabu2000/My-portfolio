@@ -1,0 +1,34 @@
+.contect {
+  display: flex;
+  padding: 0 3rem 0 3rem;
+  margin-bottom: 10rem;
+}
+.c-left {
+  display: flex;
+  flex: 1;
+}
+
+/* right */
+
+.c-right {
+  flex: 1;
+}
+.c-right form {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.c-right .user {
+  width: 20rem;
+  height: 2rem;
+  outline: none;
+  padding: 0.3rem;
+  border: 2px solid orange;
+  border-radius: 10px;
+}
+textarea {
+  height: 4rem !important;
+}

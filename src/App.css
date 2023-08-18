@@ -1,20 +1,43 @@
-*{
-    margin: 0;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 3rem;
-}
-.right{
-    display: flex;
-
-}
-ul{
-    display: flex;
-    gap: 2rem;
-    list-style-type: none;
-}
-button{
-    margin-left: 2rem;
-}
+:root {
+    --yellow: #f5c32c;
+    --orange: #fca61f;
+    --black: #242d49;
+    --gray: rgb(161, 161, 161);
+    --blueCard: #ddf8fe;
+    --purple: rgb(150, 89, 191);
+    --boxShadow: 0px 19px 60px rgb(0 0 0 / 15%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -60px 40px 100px rgb(23, 2, 97 , 0.2);
+  }
+  
+  .App {
+    padding: 0.5rem 5rem;
+    color: var(--black);
+  }
+  
+  .button {
+    border-radius: 34px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    padding: 11px 26px;
+    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 90%);
+    box-shadow: 0 20px 24px 3px rgba(251, 161, 40, 0.42);
+  }
+  
+  .button:hover {
+    cursor: pointer;
+    background: white;
+    color: var(--black);
+    border: 1px solid orange;
+  }
+  .blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    filter: blur(20px);
+    z-index: -9;
+  }
+  

@@ -1,0 +1,49 @@
+.e-report {
+  display: flex;
+  height: 30vh;
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.achivement {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.achivement span:nth-of-type(2) {
+  color: var(--orange);
+}
+
+.circle {
+  background: white;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-bottom: 2rem;
+  position: relative;
+  font-size: 25px;
+  font-weight: Thin (Hairline);
+}
+
+.circle::before {
+  border-radius: 100%;
+  content: "";
+  background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
+  width: 6rem;
+  height: 6rem;
+  /* top: -8px;
+  right: -8px;
+  left: -8px;
+  bottom: -20px; */
+  position: absolute;
+  z-index: -1;
+  box-shadow: var(--boxShadow);
+}

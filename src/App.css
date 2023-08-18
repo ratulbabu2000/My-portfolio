@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+.right{
+    display: flex;
+
+}
+ul{
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+button{
+    margin-left: 2rem;
+}

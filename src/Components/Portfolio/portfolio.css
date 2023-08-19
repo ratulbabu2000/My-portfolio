@@ -21,10 +21,12 @@
 
 .portfolio .swiper{
   overflow: visible !important;
-  width: 100%;
 }
-
-.portfolio-slider .swiper-slider{
+.portfolio-slider{
+margin-top: 3rem;
+width: 100%;
+}
+.portfolio-slider .swiper-slide{
   width: 30rem;
 }
 .portfolio img{

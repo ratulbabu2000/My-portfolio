@@ -1,5 +1,7 @@
+import { motion } from "framer-motion";
 import "./work.css";
 import React from "react";
+
 
 export default function Work() {
   return (
@@ -23,7 +25,13 @@ export default function Work() {
 
       <div className="w-right">
         <div className="circleOne">
-          <div className="w-mainCurcle">
+          <motion.div 
+          initial = {{rotate : 45}}
+          whileInView={{rotate : 0}}
+          viewport={{margin : '-20px'}}
+          transition={{duration : 4.5 , type : 'spring'}}
+          
+          className="w-mainCurcle">
             <div className="w-c-Circle">
               <img
                 src="https://www.freeiconspng.com/thumbs/facebook-logo-png/facebook-logo-png-20.png"
@@ -54,7 +62,7 @@ export default function Work() {
                 alt=""
               />
             </div>
-          </div>
+          </motion.div>
           <div className="w-backCircle blueCircle"></div>
           <div className="w-backCircle orangeCircle"></div>
         </div>

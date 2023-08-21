@@ -1,9 +1,9 @@
 import "./portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"
-import React from "react";
 
-export default function portfolio() {
+
+const portfolio = () => {
   // portfolio page link //
   const page1 =
     "https://d2zm6ltkguvwr7.cloudfront.net/wp-content/uploads/2017/11/Dropbox-838x422.png";
@@ -15,6 +15,8 @@ export default function portfolio() {
     "https://cdn.sanity.io/images/v6oximkk/production/21d23aacc75f36df01310f8782e8102a0882276f-1600x900.jpg?w=1600&h=900&auto=format";
 
   return (
+    
+
     <div className="portfolio">
       <div className="p-top-section">
         <span>Recent Domo</span>
@@ -52,3 +54,5 @@ export default function portfolio() {
     </div>
   );
 }
+
+export default portfolio

@@ -1,11 +1,16 @@
+import React from 'react'
 import "./main.css";
 import FlotingDiv from "./floutingDiv";
 import Blue from "../../blue.png";
 import Orange from "../../orange.png";
 import Sohel from "../../sohel.png";
 import Sunglass from "../../sunglass.png";
+import { motion } from 'framer-motion';
 
 export default function main() {
+
+  const transition = { duration: 2, type: "spring" };
+
   return (
     <div className="intro">
       <div className="i-left">
@@ -42,22 +47,37 @@ export default function main() {
         <img src={Blue} alt="" />
         <img src={Orange} alt="" />
         <img src={Sohel} alt="" />
-        <img style={{ right: "", top: "-6%" }} src={Sunglass} />
+        <motion.img
+          initial={{ left: '-15%' }}
+          whileInView={{ left: '-4%' }}
+          transition={transition}
+          style={{ right: "", top: "-6%" }} src={Sunglass} />
 
-        <div style={{ top: "-3%", left: "75%" }}>
+        <motion.div
+          initial={{ top : '-3%' , left: '80%' }}
+          whileInView={{ left: '75%' }}
+          transition={transition}
+
+          style={{ top: "-3%", left: "75%" }}>
           <FlotingDiv
             image="https://cdn-icons-png.flaticon.com/512/2107/2107957.png"
             text1="Web"
             text2="Devloper"
           />
-        </div>
-        <div style={{ top: "65%", left: "3%" }}>
+        </motion.div>
+
+        <motion.div
+          initial={{ left: '-15%' }}
+          whileInView={{ left: '-4%' }}
+          transition={transition}
+
+          style={{ top: "65%", left: "3%" }}>
           <FlotingDiv
             image="https://image.similarpng.com/very-thumbnail/2020/08/Like-icon-on-transparent-PNG.png"
             text1="UI/UX"
             text2="Designer"
           />
-        </div>
+        </motion.div>
 
         {/* blur Div */}
 
@@ -80,6 +100,6 @@ export default function main() {
           }}
         />
       </div>
-    </div>
+    </div >
   );
 }

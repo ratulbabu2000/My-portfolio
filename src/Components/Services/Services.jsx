@@ -7,7 +7,7 @@ export default function services() {
   const transition = { duration: 1, type: "spring" };
 
   return (
-    <div className="services">
+    <div className="services" id="Service">
       <div className="s-left devide">
         <span>My Awesome</span>
         <span>Services</span>

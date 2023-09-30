@@ -1,0 +1,18 @@
+.footer{
+    display: flex;
+    margin-top: -7rem;
+    position: relative;
+    align-items: center;
+    margin: -3rem -5rem;
+}
+.f-content{
+    position: absolute;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    color: aliceblue;
+    gap: 4rem;
+    margin-top: 4rem;
+}

@@ -1,17 +1,15 @@
 .services {
   height: 90vh;
   display: flex;
-  padding: 0 3rem 0 3rem;
+  padding: 3rem 3rem 0 3rem;
   margin-top: 9rem;
 }
 
 .s-left {
+  flex: 1;
   display: flex;
   flex-direction: column;
   position: relative;
-}
-.devide {
-  flex: 1;
 }
 .s-left > :nth-child(1) {
   font-size: 3rem;
@@ -31,6 +29,8 @@
   height: 3rem;
   margin-top: 4rem;
 }
+
+/* right section */
 
 .s-right {
   position: relative;

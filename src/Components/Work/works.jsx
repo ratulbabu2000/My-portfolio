@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Work() {
   return (
-    <div className="work">
+    <div className="work" id="Work">
       <div className="s-left W-left">
         <span>Work </span>
         <span>Brands</span>

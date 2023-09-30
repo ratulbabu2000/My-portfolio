@@ -17,6 +17,11 @@
   cursor: pointer;
 }
 
+/* import from chat Gpt */
+
+
+/* right */
+
 .n-right {
   flex: 1;
   display: flex;
@@ -32,10 +37,10 @@
   display: flex;
   gap: 2rem;
   margin: 4rem;
+  cursor: pointer;
 }
 
 .n-list > ul > li:hover {
-  font-size: 17px;
   cursor: pointer;
   color: var(--orange);
 }

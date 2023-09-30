@@ -6,8 +6,13 @@ import Orange from "../../orange.png";
 import Sohel from "../../sohel.png";
 import Sunglass from "../../sunglass.png";
 import { motion } from 'framer-motion';
+import { themeContext } from "../../Context";
+import { useContext } from "react";
 
-export default function main() {
+export default function Main() {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
 
   const transition = { duration: 2, type: "spring" };
 
@@ -15,7 +20,7 @@ export default function main() {
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span>Hy! I Am</span>
+          <span style={{color : darkMode ? "white" : ""}}>Hy! I Am</span>
           <span>SOHEL RANA</span>
           <span>
             Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -44,9 +49,10 @@ export default function main() {
       </div>
 
       <div className="i-right">
-        <img src={Blue} alt="" />
-        <img src={Orange} alt="" />
-        <img src={Sohel} alt="" />
+          <img src={Blue} alt="" />
+          <img src={Orange} alt="" />
+          <img src={Sohel} alt="" />
+          
         <motion.img
           initial={{ left: '-15%' }}
           whileInView={{ left: '-4%' }}
@@ -54,7 +60,7 @@ export default function main() {
           style={{ right: "", top: "-6%" }} src={Sunglass} />
 
         <motion.div
-          initial={{ top : '-3%' , left: '80%' }}
+          initial={{ top: '-3%', left: '80%' }}
           whileInView={{ left: '75%' }}
           transition={transition}
 
@@ -100,6 +106,6 @@ export default function main() {
           }}
         />
       </div>
-    </div >
+    </div>
   );
 }

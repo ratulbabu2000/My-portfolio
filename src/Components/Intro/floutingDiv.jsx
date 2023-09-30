@@ -1,7 +1,9 @@
 import React from "react";
 import './floutingDiv.css'
+import { color } from "framer-motion";
 
-export default function floutingDiv({image , text1 , text2}) {
+export default function FloutingDiv({image , text1 , text2}) {
+
   return(
     <div className = 'floting'>
       <img src = {image} />
@@ -10,7 +12,6 @@ export default function floutingDiv({image , text1 , text2}) {
       <br/>
       {text2}  
       </span>
-
     </div>
   );
 }

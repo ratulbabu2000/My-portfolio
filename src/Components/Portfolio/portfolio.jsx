@@ -1,6 +1,6 @@
 import "./portfolio.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 
 const portfolio = () => {
@@ -16,15 +16,14 @@ const portfolio = () => {
 
   return (
     
-
-    <div className="portfolio">
+    <div className="portfolio" id="PortFolio"> 
       <div className="p-top-section">
         <span>Recent Domo</span>
         <span>Project</span>
       </div>
 
       <Swiper
-      spaceBetween={10}
+      spaceBetween={10} 
       slidesPerView={3}
       grabCursor = {true}
       className="portfolio-slider"
@@ -33,10 +32,10 @@ const portfolio = () => {
           <img src={page1} alt="" />
         </SwiperSlide>
         <SwiperSlide >
-          <img src={page1} alt="" />
+          <img src={page2} alt="" />
         </SwiperSlide>
         <SwiperSlide >
-          <img src={page1} alt="" />
+          <img src={page3} alt="" />
         </SwiperSlide>
         <SwiperSlide >
           <img src={page1} alt="" />

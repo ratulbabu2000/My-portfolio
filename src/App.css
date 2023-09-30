@@ -29,15 +29,7 @@
     cursor: pointer;
     background: white;
     color: var(--black);
-    border: 1px solid orange;
+    border: 1px solid var(--orange);
   }
-  .blur {
-    position: absolute;
-    width: 22rem;
-    height: 14rem;
-    border-radius: 50%;
-    background-color: #ffffff;
-    filter: blur(20px);
-    z-index: -9;
-  }
+
   
